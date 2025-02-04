@@ -1,761 +1,883 @@
 <!DOCTYPE html>
-<html class=" boinfet idc0_343"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Roman Freeman</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <style>
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-
-html {
-  background: white;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background: white;
-  margin: 50px 0 100px;
-  letter-spacing: .3px;
-  color: #39424B;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: none;
-  margin: 0;
-}
-
-h1 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 1px;
-}
-
-h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: .5px;
-}
-
-h3 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: .4px;
-}
-
-h3.bold {
-  font-weight: 700;
-}
-
-h4 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-h4.bold {
-  font-weight: 700;
-}
-
-h5 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-}
-
-h5.italic {
-  font-style: italic;
-}
-
-h6 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #2895F1;
-}
-
-a .fa-external-link {
-  font-size: 10px;
-  vertical-align: text-top;
-}
-
-p,
-li {
-  font-size: 11px;
-}
-
-blockquote {
-  font-size: 11px;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 10px 25px;
-}
-
-em {
-  color: #999;
-}
-
-ul {
-  margin: 10px 0 0;
-  -webkit-padding-start: 25px;
-}
-
-ul li {
-  padding-left: 10px;
-}
-
-ul.minimal {
-  list-style: none;
-  padding: 0;
-}
-
-ul.minimal li {
-  margin-bottom: 3px;
-  padding-left: 0;
-}
-
-ul.two-column {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 28px;
-  column-count: 2;
-  column-gap: 28px;
-}
-
-ul.two-column li {
-  padding-left: 0;
-}
-
-@page {
-  size: A4;
-}
-
-.container {
-  padding-top: 20px;
-}
-
-.keyline {
-  width: 45px;
-  margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.profile-pic {
-  margin-top: -5px;
-  margin-right: 18px;
-}
-
-.profile-pic img {
-  height: 52px;
-  width: 52px;
-  border-radius: 50%;
-  border: 2px solid #56817A;
-}
-
-.summary {
-  margin: 5px 0 5px;
-}
-
-.sublink {
-  font-size: 70%;
-  font-weight: 200;
-  color: dimgray;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-/* Layouts */
-.page {
-  background: white;
-  width: 612px;
-  min-height: 792px;
-  display: block;
-  margin: 0 auto;
-  border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.left-column {
-  float: left;
-  width: 160px;
-  margin-right: 20px;
-  word-wrap: break-word;
-}
-
-.right-column {
-  width: auto;
-  overflow: hidden;
-}
-
-.item {
-  margin-bottom: 15px;
-}
-
-.item:last-child {
-  margin-bottom: 0;
-}
-
-@media print {
-  body {
-    margin: 0;
-  }
-
-  .page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 36px 0 30px;
-    box-shadow: none;
-  }
-
-  .page .resume-header,
-  .page .resume-content {
-    padding: 0 22px 0 34px;
-  }
-
-  .container {
-    page-break-inside: avoid;
-  }
-
-  .work-container .item {
-    page-break-inside: avoid;
-  }
-
-  .fa-external-link {
-    display: none;
-  }
-}
-
-/* Components */
-.info-tag-container {
-  margin-bottom: 5px;
-}
-
-.info-tag-container .fa {
-  font-size: 14px;
-  width: 12px;
-  margin-right: 5px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.info-tag-container .fa.fa-map-marker {
-  font-size: 16px;
-}
-
-.info-tag-container .fa.fa-mobile {
-  font-size: 18px;
-}
-
-.info-tag-container .fa.fa-envelope-o {
-  font-size: 12px;
-}
-
-.info-tag-container .fa.fa-desktop {
-  font-size: 11px;
-}
-
-.info-tag-container .fa.fa-external-link {
-  width: auto;
-  font-size: inherit;
-  vertical-align: text-top;
-}
-
-.info-tag-container .info-text {
-  font-size: 12px;
-  text-transform: none;
-  display: inline-block;
-  vertical-align: middle;
-  width: 139px;
-}
-
-.references-container .fa {
-  font-size: 14px;
-}
-
-.education-container .location {
-  padding-bottom: 6px;
-  font-weight: 400;
-}
-
-.education-container .specialization {
-  text-transform: none;
-  font-style: italic;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.main-skill {
-  font-size: 80%;
-}
-
-.skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
-}
-</style>
-</head>
-
-<body>
-  <main id="resume" class="page">
-    <header class="resume-header clearfix">
+<html class="boinfet idc0_343">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimal-ui"
+    />
+    <title>Roman Freeman</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Josefin Sans Light"), local("JosefinSans-Light"),
+          url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Josefin Sans Bold"), local("JosefinSans-Bold"),
+          url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 300;
+        src: local("Lato Light Italic"), local("Lato-LightItalic"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 400;
+        src: local("Lato Italic"), local("Lato-Italic"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 700;
+        src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Lato Light"), local("Lato-Light"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Lato Regular"), local("Lato-Regular"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Lato Bold"), local("Lato-Bold"),
+          url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf)
+            format("truetype");
+      }
+
+      html {
+        background: white;
+      }
+
+      body {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        background: white;
+        margin: 50px 0 100px;
+        letter-spacing: 0.3px;
+        color: #39424b;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-transform: none;
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      h3 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+      }
+
+      h3.bold {
+        font-weight: 700;
+      }
+
+      h4 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      h4.bold {
+        font-weight: 700;
+      }
+
+      h5 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 11px;
+      }
+
+      h5.italic {
+        font-style: italic;
+      }
+
+      h6 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      a:hover {
+        color: #2895f1;
+      }
+
+      a .fa-external-link {
+        font-size: 10px;
+        vertical-align: text-top;
+      }
+
+      p,
+      li {
+        font-size: 11px;
+      }
+
+      blockquote {
+        font-size: 11px;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        margin: 10px 25px;
+      }
+
+      em {
+        color: #999;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        -webkit-padding-start: 25px;
+      }
+
+      ul li {
+        padding-left: 10px;
+      }
+
+      ul.minimal {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul.minimal li {
+        margin-bottom: 3px;
+        padding-left: 0;
+      }
+
+      ul.two-column {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 28px;
+        column-count: 2;
+        column-gap: 28px;
+      }
+
+      ul.two-column li {
+        padding-left: 0;
+      }
+
+      @page {
+        size: A4;
+      }
+
+      .container {
+        padding-top: 20px;
+      }
+
+      .keyline {
+        width: 45px;
+        margin: 8px 0 10px;
+        border-top: 1px solid #56817a;
+      }
+
+      .pull-left {
+        float: left;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .profile-pic {
+        margin-top: -5px;
+        margin-right: 18px;
+      }
+
+      .profile-pic img {
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        border: 2px solid #56817a;
+      }
+
+      .summary {
+        margin: 5px 0 5px;
+      }
+
+      .sublink {
+        font-size: 70%;
+        font-weight: 200;
+        color: dimgray;
+      }
+
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      /* Layouts */
+      .page {
+        background: white;
+        width: 612px;
+        min-height: 792px;
+        display: block;
+        margin: 0 auto;
+        border-top: 10px solid #56817a;
+        padding: 36px 22px 30px 34px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .page:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .left-column {
+        float: left;
+        width: 160px;
+        margin-right: 20px;
+        word-wrap: break-word;
+      }
+
+      .right-column {
+        width: auto;
+        overflow: hidden;
+      }
+
+      .item {
+        margin-bottom: 15px;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+        }
+
+        .page {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 36px 0 30px;
+          box-shadow: none;
+        }
+
+        .page .resume-header,
+        .page .resume-content {
+          padding: 0 22px 0 34px;
+        }
+
+        .container {
+          page-break-inside: avoid;
+        }
+
+        .work-container .item {
+          page-break-inside: avoid;
+        }
+
+        .fa-external-link {
+          display: none;
+        }
+      }
+
+      /* Components */
+      .info-tag-container {
+        margin-bottom: 5px;
+      }
+
+      .info-tag-container .fa {
+        font-size: 14px;
+        width: 12px;
+        margin-right: 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .info-tag-container .fa.fa-map-marker {
+        font-size: 16px;
+      }
+
+      .info-tag-container .fa.fa-mobile {
+        font-size: 18px;
+      }
+
+      .info-tag-container .fa.fa-envelope-o {
+        font-size: 12px;
+      }
+
+      .info-tag-container .fa.fa-desktop {
+        font-size: 11px;
+      }
+
+      .info-tag-container .fa.fa-external-link {
+        width: auto;
+        font-size: inherit;
+        vertical-align: text-top;
+      }
+
+      .info-tag-container .info-text {
+        font-size: 12px;
+        text-transform: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 139px;
+      }
+
+      .references-container .fa {
+        font-size: 14px;
+      }
+
+      .education-container .location {
+        padding-bottom: 6px;
+        font-weight: 400;
+      }
+
+      .education-container .specialization {
+        text-transform: none;
+        font-style: italic;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .main-skill {
+        font-size: 80%;
+      }
+
+      .skill {
+        margin: 0.15em;
+        padding: 0.15em;
+        background: ghostwhite;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="resume" class="page">
+      <header class="resume-header clearfix">
         <div class="profile-header pull-left">
-            <h1>Roman Freeman</h1>
-            <h2>Test Automation Architect | SDET | QA Automation</h2>
+          <h1>Roman Freeman</h1>
+          <h2>Test Automation Architect | SDET | QA Automation</h2>
         </div>
         <div class="profile-pic pull-right">
-            <img src="./profile.jpeg" alt="profile-pic">
+          <img src="./profile.jpeg" alt="profile-pic" />
         </div>
-    </header>
-    <div class="resume-content">
-      <aside class="left-column">
-        <div class="container about-container">
+      </header>
+      <div class="resume-content">
+        <aside class="left-column">
+          <div class="container about-container">
             <div class="title">
-                <h3>About</h3>
-                <div class="keyline"></div>
+              <h3>About</h3>
+              <div class="keyline"></div>
             </div>
-                <div class="info-tag-container">
-                    <i class="fa fa-map-marker"></i>
-                
-                        <h6 class="info-text">100% Remote</h6>
-                </div>
-                                <div class="info-tag-container">
-                                    <i class="fa fa-linkedin-square"></i>
-                                
-                                        <h6 class="info-text">
-                                            <a href="https://linkedin.com/in/romanfreeman" target="_blank">
-                                                RomanFreeman
-                                            </a>
-                                        </h6>
-                                </div>
-        
+            <div class="info-tag-container">
+              <i class="fa fa-map-marker"></i>
+              <h6 class="info-text">100% Remote</h6>
+            </div>
+            <div class="info-tag-container">
+              <i class="fa fa-linkedin-square"></i>
+              <h6 class="info-text">
+                <a href="https://linkedin.com/in/romanfreeman" target="_blank">
+                  RomanFreeman
+                </a>
+              </h6>
+            </div>
+
             <div class="skills-container">
-                    <section class="container">
-                            <div class="title">
-                                <h3>People Skills</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Leadership</h6>
-                                    <h6 class="main-skill skill">Clear Communication</h6>
-                                    <h6 class="main-skill skill">Accountability</h6>
-                                    <h6 class="main-skill skill">Conflict Resolution</h6>
-                                    <h6 class="main-skill skill">Honesty</h6>
-                                    <h6 class="main-skill skill">Building Rapport</h6>
-                                    <h6 class="main-skill skill">Empathy</h6>
-                                    <h6 class="main-skill skill">Empowering Others</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Tech Stack</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Java</h6>
-                                    <h6 class="main-skill skill">Javascript/Typescript</h6>
-                                    <h6 class="main-skill skill">Python</h6>
-                                    <h6 class="main-skill skill">git/SVN/GitHub/BitBucket</h6>
-                                    <h6 class="main-skill skill">Spring/Boot</h6>
-                                    <h6 class="main-skill skill">JUnit/TestNG</h6>
-                                    <h6 class="main-skill skill">CodeceptJS</h6>
-                                    <h6 class="main-skill skill">Playwright/Cypress</h6>
-                                    <h6 class="main-skill skill">Selenium Webdriver</h6>
-                                    <h6 class="main-skill skill">Cucumber/Gherkin</h6>
-                                    <h6 class="main-skill skill">Postman/Newman</h6>
-                                    <h6 class="main-skill skill">RestAssured</h6>
-                                    <h6 class="main-skill skill">Jmeter/Gatling</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Methodologies</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Scrum/Kanban</h6>
-                                    <h6 class="main-skill skill">Waterfall</h6>
-                                    <h6 class="main-skill skill">Shift-left</h6>
-                                    <h6 class="main-skill skill">BDD/TDD</h6>
-                                    <h6 class="main-skill skill">Data-Driven Testing</h6>
-                                    <h6 class="main-skill skill">White/Black Box Testing</h6>
-                                    <h6 class="main-skill skill">Continuous Integration</h6>
-                                    <h6 class="main-skill skill">Continuous Delivery</h6>
-                            </div>
-                    </section>
+              <section class="container">
+                <div class="title">
+                  <h3>People Skills</h3>
+                  <div class="keyline"></div>
+                </div>
+                <div class="minimal flex-container">
+                  <h6 class="main-skill skill">Leadership</h6>
+                  <h6 class="main-skill skill">Clear Communication</h6>
+                  <h6 class="main-skill skill">Accountability</h6>
+                  <h6 class="main-skill skill">Conflict Resolution</h6>
+                  <h6 class="main-skill skill">Honesty</h6>
+                  <h6 class="main-skill skill">Building Rapport</h6>
+                  <h6 class="main-skill skill">Empathy</h6>
+                  <h6 class="main-skill skill">Empowering Others</h6>
+                </div>
+              </section>
+              <section class="container">
+                <div class="title">
+                  <h3>Tech Stack</h3>
+                  <div class="keyline"></div>
+                </div>
+                <div class="minimal flex-container">
+                  <h6 class="main-skill skill">Java</h6>
+                  <h6 class="main-skill skill">Javascript/Typescript</h6>
+                  <h6 class="main-skill skill">Python</h6>
+                  <h6 class="main-skill skill">git/SVN/GitHub/BitBucket</h6>
+                  <h6 class="main-skill skill">Spring/Boot</h6>
+                  <h6 class="main-skill skill">JUnit/TestNG</h6>
+                  <h6 class="main-skill skill">CodeceptJS</h6>
+                  <h6 class="main-skill skill">Playwright/Cypress</h6>
+                  <h6 class="main-skill skill">Selenium Webdriver</h6>
+                  <h6 class="main-skill skill">Cucumber/Gherkin</h6>
+                  <h6 class="main-skill skill">Postman/Newman</h6>
+                  <h6 class="main-skill skill">RestAssured</h6>
+                  <h6 class="main-skill skill">Jmeter/Gatling</h6>
+                </div>
+              </section>
+              <section class="container">
+                <div class="title">
+                  <h3>Methodologies</h3>
+                  <div class="keyline"></div>
+                </div>
+                <div class="minimal flex-container">
+                  <h6 class="main-skill skill">Scrum/Kanban</h6>
+                  <h6 class="main-skill skill">Waterfall</h6>
+                  <h6 class="main-skill skill">Shift-left</h6>
+                  <h6 class="main-skill skill">BDD/TDD</h6>
+                  <h6 class="main-skill skill">Data-Driven Testing</h6>
+                  <h6 class="main-skill skill">White/Black Box Testing</h6>
+                  <h6 class="main-skill skill">Continuous Integration</h6>
+                  <h6 class="main-skill skill">Continuous Delivery</h6>
+                </div>
+              </section>
             </div>
             <div class="container languages-container">
-                <div class="title">
-                    <h3>Languages</h3>
-                    <div class="keyline"></div>
-                </div>
-                <ul class="minimal">
-                        <li>
-                            <h6>English <em>(Fluent)</em></h6>
-                        </li>
-                        <li>
-                            <h6>German <em>(Working proficiency)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Ukrainian <em>(Fluent)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Russian <em>(Fluent)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Japanese <em>(Basic)</em></h6>
-                        </li>
-                </ul>
-            </div>
-      </div></aside>
-      <div class="right-column">
-                <div class="container summary-container">
-                    <div class="title">
-                        <h3>Summary</h3>
-                        <div class="keyline"></div>
-                    </div>            <p class="summary">
-                        I specialize in crafting tailored, scalable testing frameworks that empower teams to deliver reliable, maintainable, and high-quality software with confidence. Drop me a message on LinkedIn or email me: freeman.rmn at gmail.com
-                    </p>
-                </div>
-        <div class="container work-container">
-            <div class="title">
-                <h3>Experience</h3>
+              <div class="title">
+                <h3>Languages</h3>
                 <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>English <em>(Fluent)</em></h6>
+                </li>
+                <li>
+                  <h6>German <em>(Working proficiency)</em></h6>
+                </li>
+                <li>
+                  <h6>Ukrainian <em>(Fluent)</em></h6>
+                </li>
+                <li>
+                  <h6>Russian <em>(Fluent)</em></h6>
+                </li>
+                <li>
+                  <h6>Japanese <em>(Basic)</em></h6>
+                </li>
+              </ul>
             </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://linkedin.com/in/romanfreeman" target="_blank">
-                                    Roman Freeman
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">July 2021</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Test Automation Architect | Consultant</h4>
-        
-        
-                    <p class="summary">Helping established corporations and small businesses with automation and workflow optimization</p>
-        
-                    <ul>
-                        <li>STIHL (power equipment manufacturer): fixed and optimized existing Azure CD pipelines to eliminate 40% false-negative rate and save up to 30% of on-demand cloud resource costs</li>
-                        <li>Dentsply Sirona (dental equipment supplier): created a framework for visualizing company’s organizational structures, improving inter-team communication in a large corporate setting</li>
-                        <li>Small businesses: optimized a company website, infrastructure and processes, allowing to close a full-time IT support position in favor of rare per-hour maintenance appointments</li>
-                        <li>Coaching, mentoring: empowering teams to become quality-oriented, independent and more efficient at testing</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://awin.com/" target="_blank">
-                                    AWIN AG (Axel Springer)
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">April 2016</span>
-                                <span class="endDate"> - June 2021</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Senior Software Engineer</h4>
-        
-        
-                    <p class="summary">Leading affiliate marketing company</p>
-        
-                    <ul>
-                        <li>Designed, planned, and kicked off decomposition of a dinosaur monolithic app (2001 fossil), making it AWS-cloud compatible and using integration tests to ensure smooth transition phase</li>
-                        <li>Established formal processes, code review and documentation, reducing critical issues by 70%</li>
-                        <li>Saved the company an estimated 100-200K EUR/year in additional engineering costs by retiring an important but extremely outdated and hard to maintain piece of finance software</li>
-                        <li>Optimized, automated and documented the company localization process, cutting the delivery time 3x</li>
-                        <li>Automated inefficient manual workflows, freeing up engineering resources to deliver features and meet OKRs</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://rocket-internet.com/" target="_blank">
-                                    Carmudi GmbH (Rocket Internet)
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">June 2014</span>
-                                <span class="endDate"> - April 2016</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Lead QA Automation Engineer</h4>
-        
-        
-                    <p class="summary">Multi-lingual classifieds platform in 20+ developing countries</p>
-        
-                    <ul>
-                        <li>Built a Webdriver/Appium framework to cover a classifieds platform (20+ countries+languages)</li>
-                        <li>Designed and introduced API for resetting/retrieving data for end-to-end tests in production</li>
-                        <li>Built and mentored 2 QA teams, securing continuous delivery and launch of new products in a fast-paced environment</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://globallogic.com/" target="_blank">
-                                    GlobalLogic Inc.
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">November 2012</span>
-                                <span class="endDate"> - May 2014</span>
-                        </h5>
-                    </div>
-        
-                    <h4>QA Automation Engineer</h4>
-        
-        
-                    <p class="summary">Digital services and outsourcing company</p>
-        
-                    <ul>
-                        <li>Developed Webdriver-based testing framework to cover business management web and mobile apps</li>
-                        <li>Saved the team 2-3 hours every single working day by fixing internal tools and developing a script to automate installation of nightly builds, introducing continuous integration</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://postindustria.com/" target="_blank">
-                                    Postindustria Ltd.
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">November 2011</span>
-                                <span class="endDate"> - November 2012</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Test Automation Engineer</h4>
-        
-        
-                    <p class="summary">IT Services and Consulting company</p>
-        
-                    <ul>
-                        <li>Increased performance and usability of automated tests by rewriting the entire codebase and optimizing the existing distributed automated tests setup by switching to Webdriver</li>
-                        <li>Eliminated manual regression testing effort for a customizable ecommerce platform with multiple regions and languages by automating 100% of test cases</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://geeksforless.com/" target="_blank">
-                                    GFL Inc.
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">June 2010</span>
-                                <span class="endDate"> - November 2011</span>
-                        </h5>
-                    </div>
-        
-                    <h4>QA Engineer</h4>
-        
-        
-                    <p class="summary">IT Services and Outsourcing company</p>
-        
-                    <ul>
-                        <li>Filed the most bugs (including critical) in the QA team of 30+ while testing web hosting services and various related web and mobile apps (iOS, Android, Blackberry, Windows Mobile)</li>
-                        <li>Pioneered covering manual test cases with automated tests in the team and the company, reducing time for regression tests by the factor of 2 to 5, depending on the app</li>
-                    </ul>
-                </section>
-        </div>
-        <div class="container education-container">
+          </div>
+        </aside>
+        <div class="right-column">
+          <div class="container summary-container">
             <div class="title">
-            <h3>Education</h3>
-            <div class="keyline"></div>
-        </div> 
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    Sukhomlynsky National University of Mykolaiv
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">September 2008</span>
-                    <span class="endDate"> - July 2012</span>
-            </h5>
-        </div>
-         
-                <h4>Bachelor's degree Applied Mathematics</h4>
-        
-              </section>
-        </div>
-        <div class="container volunteer-container">
+              <h3>Summary</h3>
+              <div class="keyline"></div>
+            </div>
+            <p class="summary">
+              I specialize in crafting tailored, scalable testing frameworks
+              that empower teams to deliver reliable, maintainable, and
+              high-quality software with confidence. Drop me a message on
+              LinkedIn or email me: freeman.rmn at gmail.com
+            </p>
+          </div>
+          <div class="container work-container">
             <div class="title">
-                <h3>Volunteer</h3>
-                <div class="keyline"></div>
+              <h3>Experience</h3>
+              <div class="keyline"></div>
             </div>
             <section class="item">
-                <div class="section-header clearfix">
-                    <h3 class="bold pull-left">
-                            <a href="https://colorsofhope.foundation/en" target="_blank">
-                                Colors of Hope Foundation
-                                    <span class="sublink">∙ </span></a><a href="https://colorsofhope.foundation/en" target="_blank" class="sublink">https://colorsofhope.foundation/en</a>
-                            
-                    </h3>
-                    <h5 class="italic pull-right">
-                            <span class="startDate">January 2023</span>
-                            <span class="endDate"> - Present</span>
-                    </h5>
-                </div>
-                <h5>Ambassador, Translator</h5>
-        
-                <p class="summary">Disaster relief organization</p>
-        
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a
+                    href="https://linkedin.com/in/romanfreeman"
+                    target="_blank"
+                  >
+                    Roman Freeman
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">July 2021</span>
+                  <span class="endDate"> - Present</span>
+                </h5>
+              </div>
+
+              <h4>Test Automation Architect | Consultant</h4>
+
+              <p class="summary">
+                Helping established corporations and small businesses with
+                automation and workflow optimization
+              </p>
+
+              <ul>
+                <li>
+                  STIHL (power equipment manufacturer): fixed and optimized
+                  existing Azure CD pipelines to eliminate 40% false-negative
+                  rate and save up to 30% of on-demand cloud resource costs
+                </li>
+                <li>
+                  Dentsply Sirona (dental equipment supplier): created a
+                  framework for visualizing company’s organizational structures,
+                  improving inter-team communication in a large corporate
+                  setting
+                </li>
+                <li>
+                  Small businesses: optimized a company website, infrastructure
+                  and processes, allowing to close a full-time IT support
+                  position in favor of rare per-hour maintenance appointments
+                </li>
+                <li>
+                  Coaching, mentoring: empowering teams to become
+                  quality-oriented, independent and more efficient at testing
+                </li>
+              </ul>
             </section>
-        </div>
-        <div class="container references-container">
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://awin.com/" target="_blank">
+                    AWIN AG (Axel Springer)
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">April 2016</span>
+                  <span class="endDate"> - June 2021</span>
+                </h5>
+              </div>
+
+              <h4>Senior Software Engineer</h4>
+
+              <p class="summary">Leading affiliate marketing company</p>
+
+              <ul>
+                <li>
+                  Designed, planned, and kicked off decomposition of a dinosaur
+                  monolithic app (2001 fossil), making it AWS-cloud compatible
+                  and using integration tests to ensure smooth transition phase
+                </li>
+                <li>
+                  Established formal processes, code review and documentation,
+                  reducing critical issues by 70%
+                </li>
+                <li>
+                  Saved the company an estimated 100-200K EUR/year in additional
+                  engineering costs by retiring an important but extremely
+                  outdated and hard to maintain piece of finance software
+                </li>
+                <li>
+                  Optimized, automated and documented the company localization
+                  process, cutting the delivery time 3x
+                </li>
+                <li>
+                  Automated inefficient manual workflows, freeing up engineering
+                  resources to deliver features and meet OKRs
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://rocket-internet.com/" target="_blank">
+                    Carmudi GmbH (Rocket Internet)
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">June 2014</span>
+                  <span class="endDate"> - April 2016</span>
+                </h5>
+              </div>
+
+              <h4>Lead QA Automation Engineer</h4>
+
+              <p class="summary">
+                Multi-lingual classifieds platform in 20+ developing countries
+              </p>
+
+              <ul>
+                <li>
+                  Built a Webdriver/Appium framework to cover a classifieds
+                  platform (20+ countries+languages)
+                </li>
+                <li>
+                  Designed and introduced API for resetting/retrieving data for
+                  end-to-end tests in production
+                </li>
+                <li>
+                  Built and mentored 2 QA teams, securing continuous delivery
+                  and launch of new products in a fast-paced environment
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://globallogic.com/" target="_blank">
+                    GlobalLogic Inc.
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">November 2012</span>
+                  <span class="endDate"> - May 2014</span>
+                </h5>
+              </div>
+
+              <h4>QA Automation Engineer</h4>
+
+              <p class="summary">Digital services and outsourcing company</p>
+
+              <ul>
+                <li>
+                  Developed Webdriver-based testing framework to cover business
+                  management web and mobile apps
+                </li>
+                <li>
+                  Saved the team 2-3 hours every single working day by fixing
+                  internal tools and developing a script to automate
+                  installation of nightly builds, introducing continuous
+                  integration
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://postindustria.com/" target="_blank">
+                    Postindustria Ltd.
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">November 2011</span>
+                  <span class="endDate"> - November 2012</span>
+                </h5>
+              </div>
+
+              <h4>Test Automation Engineer</h4>
+
+              <p class="summary">IT Services and Consulting company</p>
+
+              <ul>
+                <li>
+                  Increased performance and usability of automated tests by
+                  rewriting the entire codebase and optimizing the existing
+                  distributed automated tests setup by switching to Webdriver
+                </li>
+                <li>
+                  Eliminated manual regression testing effort for a customizable
+                  ecommerce platform with multiple regions and languages by
+                  automating 100% of test cases
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://geeksforless.com/" target="_blank">
+                    GFL Inc.
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">June 2010</span>
+                  <span class="endDate"> - November 2011</span>
+                </h5>
+              </div>
+
+              <h4>QA Engineer</h4>
+
+              <p class="summary">IT Services and Outsourcing company</p>
+
+              <ul>
+                <li>
+                  Filed the most bugs (including critical) in the QA team of 30+
+                  while testing web hosting services and various related web and
+                  mobile apps (iOS, Android, Blackberry, Windows Mobile)
+                </li>
+                <li>
+                  Pioneered covering manual test cases with automated tests in
+                  the team and the company, reducing time for regression tests
+                  by the factor of 2 to 5, depending on the app
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="container education-container">
             <div class="title">
-                <h3>References</h3>
-                <div class="keyline"></div>
+              <h3>Education</h3>
+              <div class="keyline"></div>
             </div>
-                <section class="item clearfix">
-                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-                    <blockquote>
-                        Roman was very passionate about delivery and quality but at the same time he had deep understanding of business needs and was able to look at the problem from different angles. As a result, we delivered MVP in about 2 month with minimal amount of critical issues. | Read full text on LinkedIn.
-                    </blockquote>
-        
-                    <h5 class="pull-right"> — Jane</h5>
-                </section>
-                <section class="item clearfix">
-                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-                    <blockquote>
-                        Roman helped architect the design of the team's microservices, messages/events, databases and UI alongside his expertise in coding and testing, making him a valuable T-shaped member of the team. Aside from the tech, he is a really fun and positive person to work with and learn from. | Read full text on LinkedIn.
-                    </blockquote>
-        
-                    <h5 class="pull-right"> — Chris</h5>
-                </section>
-                <section class="item clearfix">
-                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-                    <blockquote>
-                        Roman was our main point of contact on the engineering side for any internationalization and localization topics and processes. He streamlined processes on the technical side of localization, developed tools and environments for easier localization and localization testing, and made sure process improvements were documented. | Read full text on LinkedIn.
-                    </blockquote>
-        
-                    <h5 class="pull-right"> — Mirjam</h5>
-                </section>
-                <section class="item clearfix">
-                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-                    <blockquote>
-                        Roman went deep into every task he had, he has a broad knowledge of his field and related processes. He is always very curious to know how other systems and procedures work outside of his direct ownership so that he can better understand and improve them. He is such a good person and incredibly easygoing, working with him is frictionless and a lot of fun. | Read full text on LinkedIn.
-                    </blockquote>
-        
-                    <h5 class="pull-right"> — Damnjan</h5>
-                </section>
-                <section class="item clearfix">
-                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-                    <blockquote>
-                        Roman was demonstrating superior technical ability and produced work of exceptional quality. His willingness to handle challenging projects and focus on completion has amazed me many times. | Read full text on LinkedIn.
-                    </blockquote>
-        
-                    <h5 class="pull-right"> — Iryna</h5>
-                </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  Sukhomlynsky National University of Mykolaiv
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">September 2008</span>
+                  <span class="endDate"> - July 2012</span>
+                </h5>
+              </div>
+
+              <h4>Bachelor's degree Applied Mathematics</h4>
+            </section>
+          </div>
+          <div class="container volunteer-container">
+            <div class="title">
+              <h3>Volunteer</h3>
+              <div class="keyline"></div>
+            </div>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://colorsofhope.foundation/en" target="_blank">
+                    Colors of Hope Foundation
+                    <span class="sublink">∙ </span></a
+                  ><a
+                    href="https://colorsofhope.foundation/en"
+                    target="_blank"
+                    class="sublink"
+                    >https://colorsofhope.foundation/en</a
+                  >
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">January 2023</span>
+                  <span class="endDate"> - Present</span>
+                </h5>
+              </div>
+              <h5>Ambassador, Translator</h5>
+
+              <p class="summary">Disaster relief organization</p>
+            </section>
+          </div>
+          <div class="container references-container">
+            <div class="title">
+              <h3>References</h3>
+              <div class="keyline"></div>
+            </div>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Roman was very passionate about delivery and quality but at the
+                same time he had deep understanding of business needs and was
+                able to look at the problem from different angles. As a result,
+                we delivered MVP in about 2 month with minimal amount of
+                critical issues. | Read full text on LinkedIn.
+              </blockquote>
+
+              <h5 class="pull-right">— Jane</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Roman helped architect the design of the team's microservices,
+                messages/events, databases and UI alongside his expertise in
+                coding and testing, making him a valuable T-shaped member of the
+                team. Aside from the tech, he is a really fun and positive
+                person to work with and learn from. | Read full text on
+                LinkedIn.
+              </blockquote>
+
+              <h5 class="pull-right">— Chris</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Roman was our main point of contact on the engineering side for
+                any internationalization and localization topics and processes.
+                He streamlined processes on the technical side of localization,
+                developed tools and environments for easier localization and
+                localization testing, and made sure process improvements were
+                documented. | Read full text on LinkedIn.
+              </blockquote>
+
+              <h5 class="pull-right">— Mirjam</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Roman went deep into every task he had, he has a broad knowledge
+                of his field and related processes. He is always very curious to
+                know how other systems and procedures work outside of his direct
+                ownership so that he can better understand and improve them. He
+                is such a good person and incredibly easygoing, working with him
+                is frictionless and a lot of fun. | Read full text on LinkedIn.
+              </blockquote>
+
+              <h5 class="pull-right">— Damnjan</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Roman was demonstrating superior technical ability and produced
+                work of exceptional quality. His willingness to handle
+                challenging projects and focus on completion has amazed me many
+                times. | Read full text on LinkedIn.
+              </blockquote>
+
+              <h5 class="pull-right">— Iryna</h5>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-
-</body></html>
+    </main>
+  </body>
+</html>
