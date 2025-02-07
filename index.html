@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="boinfet idc0_343">
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -85,14 +85,28 @@
             format("truetype");
       }
 
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
       html {
-        background: white;
+        background: #063846e8;
+        background-image: linear-gradient(-45deg, #b16595, #136d9d, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
       }
 
       body {
         font-family: "Lato", Helvetica, Arial, sans-serif;
         font-weight: 400;
-        background: white;
         margin: 50px 0 100px;
         letter-spacing: 0.3px;
         color: #39424b;
@@ -231,7 +245,7 @@
       .keyline {
         width: 45px;
         margin: 8px 0 10px;
-        border-top: 1px solid #56817a;
+        border-top: 1px solid #063846e8;
       }
 
       .pull-left {
@@ -257,7 +271,7 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
-        border: 2px solid #56817a;
+        border: 2px solid #063846e8;
       }
 
       .summary {
@@ -281,9 +295,9 @@
         min-height: 792px;
         display: block;
         margin: 0 auto;
-        border-top: 10px solid #56817a;
+        border-top: 10px solid #063846e8;
         padding: 36px 22px 30px 34px;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.5);
       }
 
       .page:after {
@@ -608,7 +622,9 @@
               <h3>Why work with me?</h3>
               <div class="keyline"></div>
             </div>
-            <p>There is a lot of fish in the pond, so what makes me stand out?</p>
+            <p>
+              There is a lot of fish in the pond, so what makes me stand out?
+            </p>
             <p>Here are some of the highlights:</p>
             <p>
               <i class="fa fa-flash"></i>
@@ -671,7 +687,7 @@
             </p>
             <p>
               <i class="fa fa-align-left"></i>
-              Shift-left: detect and prevent issues as early as planning stage. 
+              Shift-left: detect and prevent issues as early as planning stage.
             </p>
             <p>
               <i class="fa fa-search"></i>
